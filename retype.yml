@@ -1,0 +1,35 @@
+input: src
+output: .retype
+url: https://docs.protect1c.ru
+
+start.pro: true
+
+gravatar:
+  default: monsterid
+  enabled: true
+
+branding:
+  title: МИКО
+  label: wiki
+
+meta:
+  title: " | docs.protect1c.ru - МИКО: Облачная система лицензирования и защиты кода 1С"
+
+search:
+  placeholder: Поиск
+  noResultsFoundMsg: Ничего не нашли по вашему запросу
+
+edit:
+  repo: "https://github.com/protect1c/docs/edit/"
+  base: /src
+  branch: master
+  label: Редактировать в GitHub
+
+integrations:
+  googleAnalytics:
+    id: UA-8336599-8
+  googleTagManager:
+    id: GTM-KXBHF8J
+
+footer:
+  copyright: "&copy; {{ year }} [МИКО](https://protect.miko.ru/) . Все права защищены."
