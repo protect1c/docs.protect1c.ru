@@ -1,0 +1,56 @@
+
+/*! MIKO CUSTOM */
+
+@media (min-width: 1024px) {
+    /* Поправим ширину правого меню */
+    .lg\:w-56 {
+        width: 16rem;
+    }
+
+    /* Поправим ширину левого меню */
+    .md\:w-75 {
+        width:19.75rem
+    }
+
+    /* Поправим ширину центрального блока */
+    .container {
+        max-width: 1450px;
+    }
+
+    /* В ретине большие картинки не на всю страничку*/
+    img.img-zoomable {
+        width: 748px;
+    }
+}
+
+
+/* Стиль для картинок с тенью */
+img.miko-shadow {
+    border-radius: 5px;
+    background-color: #e4e4e4;
+    border: 1px solid #adadad;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+/*Запрет переноса выделенных блоков по словам*/
+.docs-markdown code:not([class*=language-]):not(.member-signature) {
+    white-space: nowrap;
+}
+
+/* Подзаголовок в компоненте ref */
+.miko-ref .subtitle {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Скрываем адрес ссылки в компоненте ref */
+.miko-ref .text-gray-400 {
+    display: none;
+}
+
+/* Отступ справа от иконки */
+.miko-ref svg {
+    margin-right: 12px;
+}
