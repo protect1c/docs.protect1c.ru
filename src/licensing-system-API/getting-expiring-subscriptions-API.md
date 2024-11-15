@@ -10,9 +10,9 @@ order: -3
 !!!
 
 <img class="miko-shadow img-zoomable"  
-src="/assets/licensing-system-API/getting-expiring-subscriptions-API/getting-expiring-subscriptions-API_1.png"
-data-original="/assets/licensing-system-API/getting-expiring-subscriptions-API/getting-expiring-subscriptions-API_1.png"
-srcset="/assets/licensing-system-API/getting-expiring-subscriptions-API/getting-expiring-subscriptions-API_1_prev.png 1x, /assets/licensing-system-API/getting-expiring-subscriptions-API/getting-expiring-subscriptions-API_1.png 2x"
+src="/assets/licensing-system/getting-expiring-subscriptions/getting-expiring-subscriptions_1.png"
+data-original="/assets/licensing-system/getting-expiring-subscriptions/getting-expiring-subscriptions_1.png"
+srcset="/assets/licensing-system/getting-expiring-subscriptions/getting-expiring-subscriptions_1_prev.png 1x, /assets/licensing-system/getting-expiring-subscriptions/getting-expiring-subscriptions_1.png 2x"
 alt="Система защиты и лицензированния кода МИКО для 1С: API системы лицензирования"
 />
 
@@ -49,8 +49,8 @@ alt="Система защиты и лицензированния кода МИ
 Нажав на кнопку **Try it out** можно протестировать работу системы, указав значения полей.
 
 <img class="miko-shadow img-zoomable"  
-src="/assets/licensing-system-API/getting-expiring-subscriptions-API/getting-expiring-subscriptions-API_2.png"
-data-original="/assets/licensing-system-API/getting-expiring-subscriptions-API/getting-expiring-subscriptions-API_2.png"
-srcset="/assets/licensing-system-API/getting-expiring-subscriptions-API/getting-expiring-subscriptions-API_2_prev.png 1x, /assets/licensing-system-API/getting-expiring-subscriptions-API/getting-expiring-subscriptions-API_2.png 2x"
+src="/assets/licensing-system/getting-expiring-subscriptions/getting-expiring-subscriptions_2.png"
+data-original="/assets/licensing-system/getting-expiring-subscriptions/getting-expiring-subscriptions_2.png"
+srcset="/assets/licensing-system/getting-expiring-subscriptions/getting-expiring-subscriptions_2_prev.png 1x, /assets/licensing-system/getting-expiring-subscriptions/getting-expiring-subscriptions_2.png 2x"
 alt="Система защиты и лицензированния кода МИКО для 1С: API для получения списка истекающих подписок"
 />
