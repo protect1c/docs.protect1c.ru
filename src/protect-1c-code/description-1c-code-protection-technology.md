@@ -11,6 +11,13 @@ order: -1
 
 При выполнении кода защищенного модуля выполняется проверка срока действия лицензионного ключа и наличия свободного рабочего места. Для этого устанавливается защищенное соединение с веб-сервером лицензирования, а при отсутствии связи включается офлайн режим работы.
 
+<img class="miko-shadow img-zoomable"  
+src="/assets/protect-1c-code/description-1c-code-protection-technology/description-1c-code-protection-technology_1.png"
+data-original="/assets/protect-1c-code/description-1c-code-protection-technology/description-1c-code-protection-technology_1.png"
+srcset="/assets/protect-1c-code/description-1c-code-protection-technology/description-1c-code-protection-technology_1_prev.png 1x, /assets/protect-1c-code/description-1c-code-protection-technology/description-1c-code-protection-technology_1.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: описание технологии защиты кода 1С"
+/>
+
 Проверка лицензии выполняется в момент обращения к защищаемой процедуре или функции. Закрытию подлежит весь программный модуль целиком, однако разработчик вправе выбирать с какими функциональными возможностями связана каждая конкретная процедура или функция модуля посредством установки соответствия feature id.
 
 Текстовое содержимое защищаемых процедур и функций шифруется, а поток управления в байт-коде модуля подвергается обфускации для противостояния реверс-инжинирингу. Расшифровка содержания констант выполняется в момент выполнения программы и только после успешной проверки лицензионного ключа.
