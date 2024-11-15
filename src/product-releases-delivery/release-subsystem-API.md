@@ -14,9 +14,9 @@ order: -3
 В системе защиты и лицензирования кода 1С предусмотрено несколько API, которые позволяют управлять и взаимодействовать с релизами. Одним из них является API для получения списка релизов, рассмотрим его.
 
 <img class="miko-shadow img-zoomable"  
-src="/assets/product-releases-delivery/release-subsystem-API/release-subsystem-api_1.png"
-data-original="/assets/product-releases-delivery/release-subsystem-API/release-subsystem-api_1.png"
-srcset="/assets/product-releases-delivery/release-subsystem-API/release-subsystem-api_1_prev.png 1x, /assets/product-releases-delivery/release-subsystem-API/release-subsystem-api_1.png 2x"
+src="/assets/product-releases-delivery/release-subsystem-API/release-subsystem_1.png"
+data-original="/assets/product-releases-delivery/release-subsystem-API/release-subsystem_1.png"
+srcset="/assets/product-releases-delivery/release-subsystem-API/release-subsystem_1_prev.png 1x, /assets/product-releases-delivery/release-subsystem-API/release-subsystem_1.png 2x"
 alt="Система защиты и лицензированния кода МИКО для 1С: API для работы с релизами"
 />
 
@@ -59,8 +59,8 @@ alt="Система защиты и лицензированния кода МИ
 Нажав на кнопку **Try it out** можно протестировать работу системы, указав значения полей.
 
 <img class="miko-shadow img-zoomable"  
-src="/assets/product-releases-delivery/release-subsystem-API/release-subsystem-api_2.png"
-data-original="/assets/product-releases-delivery/release-subsystem-API/release-subsystem-api_2.png"
-srcset="/assets/product-releases-delivery/release-subsystem-API/release-subsystem-api_2_prev.png 1x, /assets/product-releases-delivery/release-subsystem-API/release-subsystem-api_2.png 2x"
+src="/assets/product-releases-delivery/release-subsystem-API/release-subsystem_2.png"
+data-original="/assets/product-releases-delivery/release-subsystem-API/release-subsystem_2.png"
+srcset="/assets/product-releases-delivery/release-subsystem-API/release-subsystem_2_prev.png 1x, /assets/product-releases-delivery/release-subsystem-API/release-subsystem_2.png 2x"
 alt="Система защиты и лицензированния кода МИКО для 1С: API для получения списка релизов"
 />
