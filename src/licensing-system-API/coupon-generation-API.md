@@ -10,9 +10,9 @@ order: -1
 !!!
 
 <img class="miko-shadow img-zoomable"  
-src="/assets/licensing-system-API/coupon-generation-API/coupon-generation-API_1.png"
-data-original="/assets/licensing-system-API/coupon-generation-API/coupon-generation-API_1.png"
-srcset="/assets/licensing-system-API/coupon-generation-API/coupon-generation-API_1_prev.png 1x, /assets/licensing-system-API/coupon-generation-API/coupon-generation-API_1.png 2x"
+src="/assets/licensing-system/coupon-generation/coupon-generation_1.png"
+data-original="/assets/licensing-system/coupon-generation/coupon-generation_1.png"
+srcset="/assets/licensing-system/coupon-generation/coupon-generation_1_prev.png 1x, /assets/licensing-system/coupon-generation/coupon-generation_1.png 2x"
 alt="Система защиты и лицензированния кода МИКО для 1С: API системы лицензирования"
 />
 
@@ -67,8 +67,8 @@ alt="Система защиты и лицензированния кода МИ
 Нажав на кнопку **Try it out** можно протестировать работу системы, указав значения полей.
 
 <img class="miko-shadow img-zoomable"  
-src="/assets/licensing-system-API/coupon-generation-API/coupon-generation-API_2.png"
-data-original="/assets/licensing-system-API/coupon-generation-API/coupon-generation-API_2.png"
-srcset="/assets/licensing-system-API/coupon-generation-API/coupon-generation-API_2_prev.png 1x, /assets/licensing-system-API/coupon-generation-API/coupon-generation-API_2.png 2x"
+src="/assets/licensing-system/coupon-generation/coupon-generation_2.png"
+data-original="/assets/licensing-system/coupon-generation/coupon-generation_2.png"
+srcset="/assets/licensing-system/coupon-generation/coupon-generation_2_prev.png 1x, /assets/licensing-system/coupon-generation/coupon-generation_2.png 2x"
 alt="Система защиты и лицензированния кода МИКО для 1С: API системы лицензирования"
 />
