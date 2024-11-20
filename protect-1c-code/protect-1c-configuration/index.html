@@ -8,7 +8,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.784996370368">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.785439582437">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -35,11 +35,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.6.0.784996370368" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.785439582437" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.784996370368" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.785439582437" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.784996370368" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.785439582437" data-turbo-eval="false" defer></script>
 
     <link href="/assets/css/custom.css" rel="stylesheet" />
 
@@ -189,11 +189,33 @@
 <li>Перейдите на страницу <strong>Фичи</strong> и добавьте новую фичу.</li>
 <li>В поле Название фичи введите ее имя.</li>
 <li>Идентификатор фичи присваивается автоматически, при необходимости можно указать произвольный в поле ID фичи.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_1.png"
+data-original="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_1.png"
+srcset="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_1_prev.png 1x, /assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_1.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: добавление Фичи"
+/></p>
+<ol start="5">
 <li>Далее перейдите к странице <strong>Продукты</strong>, добавьте новый продукт.</li>
 <li>Введите название вашего продукта.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_2.png"
+data-original="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_2.png"
+srcset="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_2_prev.png 1x, /assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_2.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: добавление Продукта"
+/></p>
+<ol start="7">
 <li>На вкладке Основные настройки укажите созданную ранее фичу и ограничение лицензии по количеству пользователей, хостов, или баз данных.</li>
 <li>Идентификатор продукта присваивается автоматически.</li>
 </ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_3.png"
+data-original="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_3.png"
+srcset="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_3_prev.png 1x, /assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_3.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: добавление Фичи в Продукт"
+/></p>
 <doc-anchor-target id="подготовка-конфигурации">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#подготовка-конфигурации">#</doc-anchor-trigger>
@@ -204,9 +226,25 @@
 <ol>
 <li>Откройте вашу конфигурацию в режиме конфигуратор.</li>
 <li>Определите модули конфигурации 1С, доступ к которым будет запрещен.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_4.png"
+data-original="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_4.png"
+srcset="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_4_prev.png 1x, /assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_4.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: выбор модуля, доступ к которому будет запрещен"
+/></p>
+<ol start="3">
 <li>Укажите, что выбранные модули будут поставляться без исходных кодов. Для этого настройте поставку конфигурации: Конфигурация - Поставка конфигурации - Настройка поставки.</li>
 <li>В режиме сравнить/объединить перенесите в свою конфигурацию объекты конфигурации <strong>МИКО: Защита конфигураций</strong>: общий модуль <strong>МИКО_Лицензирование</strong>, общая форма <strong>МИКО_РегистрацияПродукта</strong> и общая команда <strong>МИКО_РегистрацияПродукта</strong>. Префикс МИКО_ может быть изменен на произвольный. После переименования объектов, убедитесь, что новые имена используются в исходном коде.</li>
 <li>Откройте код общей формы регистрации продукта и замените значение в функции <strong>ОсновнаяФича</strong> на ID фичи и значение в функции <strong>ИдентификаторТриальногоПродукта</strong> на ID продукта.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_5.png"
+data-original="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_5.png"
+srcset="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_5_prev.png 1x, /assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_5.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: заполнение ОсновнаяФича и ИдентификаторТриальногоПродукта"
+/></p>
+<ol start="6">
 <li>Выгрузите полученную конфигурацию в файл с расширением .<strong>cf</strong>.</li>
 </ol>
 <doc-anchor-target id="установка-защиты">
@@ -219,12 +257,61 @@
 <ol>
 <li>Откройте вкладку <strong>Настройки программы</strong>.</li>
 <li>Заполните поля Префикс разработчика и Код поставщика значениями из своего личного кабинета Настройки - API ключи.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_6.png"
+data-original="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_6.png"
+srcset="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_6_prev.png 1x, /assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_6.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: Префикс разработчика и Код поставщика значениями в личном кабинете"
+/></p>
+<ol start="3">
 <li>Укажите префикс метаданных МИКО_, если префикс был изменен на произвольный, укажите его.</li>
-<li>В справочнике Фичи продублируйте фичи, указав ID фичи и ее наименование, как при регистрации в личном кабинете в разделе Фичи.</li>
-<li>Перейдите к разделу Конфигурации и расширения и добавьте конфигурацию, выбрав ранее подготовленный cf файл. Дождитесь окончания загрузки файла.</li>
+<li>Нажмите кнопку <strong>Записать</strong>.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_7.png"
+data-original="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_7.png"
+srcset="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_7_prev.png 1x, /assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_7.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: заполнение полей во вкладке Настройки программы"
+/></p>
+<ol start="5">
+<li>В справочнике <strong>Фичи</strong> продублируйте фичи, указав ID фичи и ее наименование, как при регистрации в личном кабинете в разделе Фичи.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_8.png"
+data-original="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_8.png"
+srcset="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_8_prev.png 1x, /assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_8.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: добавление Фичи в справочнике в 1С"
+/></p>
+<ol start="6">
+<li>Перейдите к разделу <strong>Конфигурации и расширения</strong> и добавьте конфигурацию, выбрав ранее подготовленный cf файл. Дождитесь окончания загрузки файла.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_9.png"
+data-original="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_9.png"
+srcset="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_9_prev.png 1x, /assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_9.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: добавление выгруженной конфигурации в 1С"
+/></p>
+<ol start="7">
 <li>Откройте загруженный образ конфигурации.</li>
 <li>Для модулей, закрытых паролем, будет возможность указать, необходимую для их выполнения фичу. Назначьте функциям их фичи. Фичи назначаются отдельно для каждой функции модуля.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_10.png"
+data-original="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_10.png"
+srcset="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_10_prev.png 1x, /assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_10.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: заполнение необходимой фичи для выполнения модулей"
+/></p>
+<ol start="9">
 <li>Выполните команду Установить защиту.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_11.png"
+data-original="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_11.png"
+srcset="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_11_prev.png 1x, /assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_11.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: выполнение команды Установить защиту"
+/></p>
+<ol start="10">
 <li>В результате будет создан файл с окончанием <strong>.protect.cf</strong>.</li>
 </ol>
 <doc-anchor-target id="проверка-результатов">
@@ -240,13 +327,33 @@
 <li>Убедитесь, что текст защищенного модуля стал недоступен.</li>
 <li>Запустите информационную базу в режиме предприятия и попробуйте открыть один из элементов справочника <em>Котики</em> или создать нового. На экране появится сообщение об ошибке: <strong>Не указан лицензионный ключ</strong>.</li>
 </ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_12.png"
+data-original="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_12.png"
+srcset="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_12_prev.png 1x, /assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_12.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: проверка результатов"
+/></p>
 <p>Для дальнейшей работы со справочником <em>Котики</em> необходимо зарегистрироваться в Системе защиты и лицензирования кода и получить Лицензионный ключ. Для этого:</p>
 <ol start="5">
 <li>Откройте пункт <strong>Регистрация продукта</strong> внутри вашего продукта.</li>
 <li>Нажмите кнопку <strong>Перейти к регистрации клиента…</strong> и заполните анкету нового клиента.</li>
 <li>Нажмите кнопку <strong>Зарегистрировать</strong>. Если данные введены корректно, то система выдаст новый лицензионный ключ.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_13.png"
+data-original="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_13.png"
+srcset="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_13_prev.png 1x, /assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_13.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: успешная регистрация клиента"
+/></p>
+<ol start="8">
 <li>Убедитесь, что создаются новые элементы справочника <em>Котики</em> и  открываются уже существующие.<br>При этом будет создана сессия с сервером лицензирования и произведен захват фичи, что можно проверить в личном кабинете на сайте <a href="https://lm.miko.ru">https://lm.miko.ru</a> в разделе Монитор сессий. При завершении работы с программой 1С, фича будет освобождена, а сессия завершена.</li>
 </ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_14.png"
+data-original="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_14.png"
+srcset="/assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_14_prev.png 1x, /assets/protect-1c-code/protect-1c-configuration/protect-1c-configuration_14.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: захват фичи в Мониторе сессий"
+/></p>
 
                                 
                                 <!-- Required only on API pages -->
