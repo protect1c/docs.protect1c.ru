@@ -10,7 +10,14 @@ gravatar:
 
 branding:
   title: МИКО
+  logo: /assets/logo_protect1c.png
+  logoDark: /assets/logo_protect1c.png
   label: wiki
+
+links:
+  - text: protect.miko.ru
+    link: https://protect.miko.ru
+    target: blank
 
 meta:
   title: " | docs.protect1c.ru - МИКО: Облачная система лицензирования и защиты кода 1С"
