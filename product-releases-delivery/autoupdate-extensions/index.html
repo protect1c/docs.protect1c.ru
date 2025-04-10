@@ -8,10 +8,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.795160570050">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.7.0.797589290782">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.6.0">
+    <meta name="generator" content="Retype 3.7.0">
 
     <!-- Primary Meta Tags -->
     <title>Автообновление расширений | docs.protect1c.ru - МИКО: Облачная система лицензирования и защиты кода 1С</title>
@@ -35,11 +35,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.6.0.795160570050" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.7.0.797589290782" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.795160570050" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.795160570050" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.7.0.797589290782" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.7.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.7.0.797589290782" data-turbo-eval="false" defer></script>
 
     <link href="/assets/css/custom.css" rel="stylesheet" />
 
@@ -127,7 +127,6 @@
             <!-- Sidebar Skeleton -->
             <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
             
-                <!-- Render this div, if config.showSidebarFilter is `true` -->
                 <div class="flex items-center h-16 px-6">
                     <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter">
                 </div>
@@ -193,21 +192,43 @@
 <ol>
 <li><strong>Проверка наличия обновлений</strong>. При открытии страницы выполняется автоматический запрос к серверу для проверки наличия новых версий расширения.</li>
 <li><strong>Отображение информации о новой версии</strong>. При наличии новой версии расширения, пользователь увидит информацию о доступной версии расширения и краткое описание изменений.</li>
+<li><strong>Установка обновления</strong>. Система предложит установить обновление расширения, появится кнопка <strong>Установить обновление</strong>. После нажатия на кнопку произойдет автоматическая установка обновления.</li>
+</ol>
+<doc-anchor-target id="проверка-работы-автообновления-расширений">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#проверка-работы-автообновления-расширений">#</doc-anchor-trigger>
+        <span>Проверка работы автообновления расширений</span>
+    </h2>
+</doc-anchor-target>
+<p>После <a href="../extension-installer/">запуска установщика расширений</a> <em>DEMO_1CExtension_installer_4.13.epf</em> из демо комплекта перейдем к проверке работы механизма автообновления расширений на примере демонстрационной базы <em>КошкинДом.dt</em>.</p>
+<ol>
+<li>Запустите демо базу КошкинДом в режиме предприятия.</li>
+<li>На странице Регистрация продукта укажите лицензионный ключ.</li>
 </ol>
 <p><img class="miko-shadow img-zoomable"  
 src="/assets/product-releases-delivery/autoupdate-extensions/autoupdate-extensions_1.png"
 data-original="/assets/product-releases-delivery/autoupdate-extensions/autoupdate-extensions_1.png"
-srcset="/assets/product-releases-delivery/autoupdate-extensions/autoupdate-extensions_1_prev.png 1x, /assets/product-releases-delivery/autoupdate-extensions/autoupdate-extensions_1.png 2x"
-alt="Система защиты и лицензированния кода МИКО для 1С: Проверка наличия обновлений"
+srcset="/assets/product-releases-delivery/autoupdate-extensions/autoupdate-extensions_1.png 1x, /assets/product-releases-delivery/autoupdate-extensions/autoupdate-extensions_1.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: Заполнение лицензионного ключа"
 /></p>
 <ol start="3">
-<li><strong>Установка обновления</strong>. Система предложит установить обновление расширения, появится кнопка <strong>Установить обновление</strong>. После нажатия на кнопку произойдет автоматическая установка обновления.</li>
+<li>Перейдите к вкладке Обновление расширения (Доступно с версии расширения 0.0.0.3).</li>
 </ol>
 <p><img class="miko-shadow img-zoomable"  
 src="/assets/product-releases-delivery/autoupdate-extensions/autoupdate-extensions_2.png"
 data-original="/assets/product-releases-delivery/autoupdate-extensions/autoupdate-extensions_2.png"
-srcset="/assets/product-releases-delivery/autoupdate-extensions/autoupdate-extensions_2_prev.png 1x, /assets/product-releases-delivery/autoupdate-extensions/autoupdate-extensions_2.png 2x"
-alt="Система защиты и лицензированния кода МИКО для 1С: Установка обновления"
+srcset="/assets/product-releases-delivery/autoupdate-extensions/autoupdate-extensions_2.png 1x, /assets/product-releases-delivery/autoupdate-extensions/autoupdate-extensions_2.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: Проверка наличия обновлений"
+/></p>
+<ol start="4">
+<li>Нажмите Установить обновление.</li>
+<li>Для применения обновления перезагрузите сеанс 1С.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/product-releases-delivery/autoupdate-extensions/autoupdate-extensions_3.png"
+data-original="/assets/product-releases-delivery/autoupdate-extensions/autoupdate-extensions_3.png"
+srcset="/assets/product-releases-delivery/autoupdate-extensions/autoupdate-extensions_3.png 1x, /assets/product-releases-delivery/autoupdate-extensions/autoupdate-extensions_3.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: Применение обновления"
 /></p>
 
                                 

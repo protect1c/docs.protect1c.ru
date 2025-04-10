@@ -8,10 +8,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.795160570050">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.7.0.797589290782">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.6.0">
+    <meta name="generator" content="Retype 3.7.0">
 
     <!-- Primary Meta Tags -->
     <title>Установщик расширений | docs.protect1c.ru - МИКО: Облачная система лицензирования и защиты кода 1С</title>
@@ -35,11 +35,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.6.0.795160570050" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.7.0.797589290782" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.795160570050" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.795160570050" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.7.0.797589290782" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.7.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.7.0.797589290782" data-turbo-eval="false" defer></script>
 
     <link href="/assets/css/custom.css" rel="stylesheet" />
 
@@ -127,7 +127,6 @@
             <!-- Sidebar Skeleton -->
             <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
             
-                <!-- Render this div, if config.showSidebarFilter is `true` -->
                 <div class="flex items-center h-16 px-6">
                     <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter">
                 </div>
@@ -192,30 +191,88 @@
 <p>Процесс работы установщика:</p>
 <ol>
 <li><strong>Проверка лицензионного ключа</strong>. Установщик принимает лицензионный ключ и проверяет наличие доступных пользователю версий.</li>
+<li><strong>Получение списка доступных расширений</strong>. После успешной проверки лицензионного ключа установщик выполняет запрос к серверу для получения списка доступных расширений. В запросе передается информация о текущем релизе и названии конфигурации.</li>
+<li><strong>Вывод списка расширений пользователю</strong>. Установщик отображает список доступных расширений.</li>
+<li><strong>Установка или скачивание расширений</strong>. Из списка доступных версий пользователь может выбрать расширение и сразу установить его или скачать для последующей ручной установки.</li>
+</ol>
+<doc-anchor-target id="проверка-работы-установщика-расширений">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#проверка-работы-установщика-расширений">#</doc-anchor-trigger>
+        <span>Проверка работы установщика расширений</span>
+    </h2>
+</doc-anchor-target>
+<p>Для проверки работы установщика расширений необходим лицензионный ключ.
+Если у клиента уже есть лицензионный ключ, можно использовать его. Если ключа нет, его можно создать в кабинете вендора, для этого:</p>
+<ol>
+<li>Перейдите по ссылке <a href="https://demoprotect.miko.ru/vendor-cabinet/index">https://demoprotect.miko.ru/vendor-cabinet/index</a></li>
+<li>На вкладке Клиенты нажмите кнопку Добавить нового клиента и заполните поля: название компании, имя, телефон и e-mail контактного лица. Нажмите Сохранить.</li>
 </ol>
 <p><img class="miko-shadow img-zoomable"  
 src="/assets/product-releases-delivery/extension-installer/extension-installer_1.png"
 data-original="/assets/product-releases-delivery/extension-installer/extension-installer_1.png"
-srcset="/assets/product-releases-delivery/extension-installer/extension-installer_1_prev.png 1x, /assets/product-releases-delivery/extension-installer/extension-installer_1.png 2x"
-alt="Система защиты и лицензированния кода МИКО для 1С: Проверка лицензионного ключа"
+srcset="/assets/product-releases-delivery/extension-installer/extension-installer_1.png 1x, /assets/product-releases-delivery/extension-installer/extension-installer_1.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: Добавление нового клиента"
 /></p>
-<ol start="2">
-<li><strong>Получение списка доступных расширений</strong>. После успешной проверки лицензионного ключа установщик выполняет запрос к серверу для получения списка доступных расширений. В запросе передается информация о текущем релизе и названии конфигурации.</li>
-<li><strong>Вывод списка расширений пользователю</strong>. Установщик отображает список доступных расширений.</li>
+<ol start="3">
+<li>Сгенерируйте ключ. В карточке клиента нажмите кнопку Генерация нового лицензионного ключа. Для клиента будет сформирован пустой лицензионный ключ, в котором не будет никаких продуктов.</li>
 </ol>
 <p><img class="miko-shadow img-zoomable"  
 src="/assets/product-releases-delivery/extension-installer/extension-installer_2.png"
 data-original="/assets/product-releases-delivery/extension-installer/extension-installer_2.png"
-srcset="/assets/product-releases-delivery/extension-installer/extension-installer_2_prev.png 1x, /assets/product-releases-delivery/extension-installer/extension-installer_2.png 2x"
-alt="Система защиты и лицензированния кода МИКО для 1С: Вывод списка доступных расширений"
+srcset="/assets/product-releases-delivery/extension-installer/extension-installer_2.png 1x, /assets/product-releases-delivery/extension-installer/extension-installer_2.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: Генерация нового лицензионного ключа"
 /></p>
 <ol start="4">
-<li><strong>Установка или скачивание расширений</strong>. Из списка доступных версий пользователь может выбрать расширение и сразу установить его или скачать для последующей ручной установки.</li>
+<li>Создайте купон для добавления продукта в лицензионный ключ. Перейдите во вкладку Купоны и нажмите кнопку Генератор купонов.</li>
+<li>В открывшейся форме укажите Тип купона - Добавить продукт, в поле Продукт добавьте продукт <em>Защита БД КошкинДом</em> для работы расширения. Нажмите кнопку Сгенерировать. Сохраните полученный купон.</li>
 </ol>
 <p><img class="miko-shadow img-zoomable"  
 src="/assets/product-releases-delivery/extension-installer/extension-installer_3.png"
 data-original="/assets/product-releases-delivery/extension-installer/extension-installer_3.png"
-srcset="/assets/product-releases-delivery/extension-installer/extension-installer_3_prev.png 1x, /assets/product-releases-delivery/extension-installer/extension-installer_3.png 2x"
+srcset="/assets/product-releases-delivery/extension-installer/extension-installer_3.png 1x, /assets/product-releases-delivery/extension-installer/extension-installer_3.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: Генерация купона"
+/></p>
+<ol start="6">
+<li>Перейдите во вкладку Купоны и нажмите кнопку Активировать купон, затем в открывшейся форме введите лицензионный ключ клиента и сохраненный сгенерированный купон, выполните активацию.</li>
+</ol>
+<p>Перейдем к проверке работы установщика расширений на примере демонстрационной базы <em>КошкинДом.dt</em> и установщика расширений <em>DEMO_1CExtension_installer_4.13.epf</em> из демо комплекта.</p>
+<ol>
+<li>Запустите демо базу КошкинДом в режиме предприятия.</li>
+<li>В главном меню выполните Файл / Открыть и выберите обработку DEMO_1CExtension_installer_4.13.epf.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/product-releases-delivery/extension-installer/extension-installer_4.png"
+data-original="/assets/product-releases-delivery/extension-installer/extension-installer_4.png"
+srcset="/assets/product-releases-delivery/extension-installer/extension-installer_4.png 1x, /assets/product-releases-delivery/extension-installer/extension-installer_4.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: Запуск обработки установщика расширений"
+/></p>
+<ol start="3">
+<li>Ответьте утвердительно на предупреждение безопасности.</li>
+<li>На странице Проверка доступных версий вставьте лицензионный ключ в одноименное поле и нажмите Далее.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/product-releases-delivery/extension-installer/extension-installer_5.png"
+data-original="/assets/product-releases-delivery/extension-installer/extension-installer_5.png"
+srcset="/assets/product-releases-delivery/extension-installer/extension-installer_5.png 1x, /assets/product-releases-delivery/extension-installer/extension-installer_5.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: Ввод лицензионного ключа"
+/></p>
+<ol start="5">
+<li>Выберите версию расширения, если их несколько и выполните Установить.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/product-releases-delivery/extension-installer/extension-installer_6.png"
+data-original="/assets/product-releases-delivery/extension-installer/extension-installer_6.png"
+srcset="/assets/product-releases-delivery/extension-installer/extension-installer_6.png 1x, /assets/product-releases-delivery/extension-installer/extension-installer_6.png 2x"
+alt="Система защиты и лицензированния кода МИКО для 1С: Выбор версии расширения"
+/></p>
+<ol start="6">
+<li>Ознакомьтесь с лицензионным соглашением и примите условия.</li>
+<li>Начнется установка расширения. После окончания установки перезагрузите информационную базу.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/product-releases-delivery/extension-installer/extension-installer_7.png"
+data-original="/assets/product-releases-delivery/extension-installer/extension-installer_7.png"
+srcset="/assets/product-releases-delivery/extension-installer/extension-installer_7.png 1x, /assets/product-releases-delivery/extension-installer/extension-installer_7.png 2x"
 alt="Система защиты и лицензированния кода МИКО для 1С: Установка расширения"
 /></p>
 
